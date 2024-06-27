@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui toga-version="0.4.5">
+    <MainWindow title="toga view" position="200,200" size="500,300" resizable="False">
+        <content>
+            <Box style="direction: COLUMN;">
+                <items>
+                    <Label text="Hello, World!" style="font_size: 24;" />
+                    <Button text="Press Me" style="padding:5;" />
+                </items>
+            </Box>
+        </content>
+    </MainWindow>
+</ui>

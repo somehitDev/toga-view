@@ -1,0 +1,42 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "toga-view"
+authors = [{name = "somehitDev", email = "this.dev.somehit@gmail.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12"
+]
+keywords = [
+    "beeware",
+    "toga",
+    "toga-echosystem",
+    "ui"
+]
+requires-python = ">=3.8"
+dependencies = [
+    "toga==0.4.5"
+]
+dynamic = ["version", "description"]
+
+[tool.flit.module]
+name = "toga_view"
+
+[project.urls]
+Repository = "https://github.com/somehitDev/toga-view"
+
+[project.scripts]
+toga_view_cli = "toga_view.__main__:run_cli"

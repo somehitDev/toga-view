@@ -1,0 +1,53 @@
+{
+    "toga-version": "0.4.5",
+    "root": {
+        "class": "MainWindow",
+        "properties": {
+            "title": "toga view",
+            "position": {
+                "x": 200,
+                "y": 200
+            },
+            "size": {
+                "width": 500,
+                "height": 300
+            },
+            "resizable": false,
+            "minimizable": true,
+            "name": "MainWindow"
+        },
+        "content": {
+            "class": "Box",
+            "properties": {
+                "style": {
+                    "direction": "COLUMN"
+                }
+            },
+            "items": [
+                {
+                    "class": "Label",
+                    "properties": {
+                        "text": "Hello, World!",
+                        "style": {
+                            "font_size": 24
+                        }
+                    }
+                },
+                {
+                    "class": "Button",
+                    "properties": {
+                        "text": "Press Me",
+                        "style": {
+                            "padding_bottom": 5,
+                            "padding_right": 5,
+                            "padding_left": 5,
+                            "padding_top": 5
+                        },
+                        "on_press": "_handler",
+                        "enabled": true
+                    }
+                }
+            ]
+        }
+    }
+}
