@@ -1,4 +1,5 @@
 .vscode
 env
+dist
 __pycache__
 _.*
